@@ -119,7 +119,7 @@ const PickupLocation = () => {
     }
   };
 
-  const AddpickupLocation = () => {
+  const AddDropLocation = () => {
     setAddItem([]);
     setPickupType('');
     setSelectedQuantity('');
@@ -169,7 +169,7 @@ const PickupLocation = () => {
   return (
     <ScrollView>
       <View>
-        <Text style={styles.headerContainer}>PickUp Information</Text>
+        <Text style={styles.headerContainer}>Dropoff Information</Text>
         <TextInput
           placeholder="Select Location"
           style={styles.textInput}
@@ -207,11 +207,14 @@ const PickupLocation = () => {
           <Text style={styles.buttonText}>Add Item</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.addItem} onPress={AddpickupLocation}>
-          <Text style={styles.buttonText}>Add Pickup location</Text>
+        <TouchableOpacity style={styles.addItem} onPress={AddDropLocation}>
+          <Text style={styles.buttonText}>Add Dropoff location</Text>
         </TouchableOpacity>
 
-        <Text style={styles.headerContainer}>Selected Pickups:</Text>
+
+        
+
+        <Text style={styles.headerContainer}>Dropoff Pickups:</Text>
         {pickupList.map((pickup, index) => (
           <View key={index}>
             <Text>Location: {pickup.location}</Text>

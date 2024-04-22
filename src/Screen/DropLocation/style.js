@@ -10,6 +10,11 @@ import { StyleSheet } from "react-native";
     fontWeight: 'bold',
     marginBottom: 10,
   },
+  textInput:{
+    borderWidth:0.2,
+    margin:8,
+    borderRadius:8
+  },
   dropdown: {
     borderWidth: 1,
     width:150,

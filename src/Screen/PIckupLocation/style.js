@@ -2,6 +2,10 @@ import { StyleSheet } from "react-native";
 
  export const styles = StyleSheet.create({
   headerContainer: {
+    backgroundColor: 'orange',
+    borderTopStartRadius:8,
+    borderTopEndRadius:8,
+    marginHorizontal:8,
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
@@ -15,6 +19,11 @@ import { StyleSheet } from "react-native";
     borderRadius: 4,
     padding: 10,
     marginBottom: 20,
+  },
+  textInput:{
+    borderWidth:0.2,
+    margin:8,
+    borderRadius:8
   },
   addItem:{
     alignSelf: 'flex-end',

@@ -1,13 +1,19 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
-// import AnotherMethod from './src/Screen/AnotherMethod'
-import PickupLocation from './src/Screen'
+import PickupLocation from './src/Screen/PIckupLocation'
+import DropoffLocation from './src/Screen/DropLocation'
+
 
 const App = () => {
   return (
+
+    <>
+    <ScrollView>
   <PickupLocation/>
-  // <AnotherMethod/>
-  
+
+  <DropoffLocation/>
+    </ScrollView>
+    </>
   )
 }
 
